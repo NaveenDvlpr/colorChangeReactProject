@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Holder = () => {
+const Holder = ({color}) => {
   return (
-    <div className="holder">
-      Empty Value
+    <div 
+    className="holder"
+    style={{backgroundColor: color}}
+    >
+      {color === '' ? 'Empty Value' : color}
     </div>
   );
 }
